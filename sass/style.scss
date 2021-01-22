@@ -1,0 +1,38 @@
+@import "main/reset";
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+@import "components/container";
+@import "components/logo";
+@import "components/buttons";
+@import "components/text";
+@import "components/header";
+@import "components/promo";
+@import "components/storange";
+@import "components/features";
+@import "components/testimonials";
+@import "components/social";
+@import "components/try";
+@import "components/dots";
+@import "components/slideshow";
+@import "components/footer";
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: ($root-font-size / 16px) * 100%; // Px to Rem
+}
+
+body {
+  background-color: #f6fafd;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}

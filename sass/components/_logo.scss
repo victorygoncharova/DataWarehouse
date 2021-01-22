@@ -1,0 +1,13 @@
+.logo {
+  display: block;
+  width: 49px;
+  height: 35px;
+  &__caption {
+    margin-left: 20px;
+    color: $headlines-color;
+    font-weight: 700;
+    font-size: rem(20px);
+    line-height: 160%;
+    text-decoration: none;
+  }
+}

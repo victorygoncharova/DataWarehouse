@@ -1,0 +1,29 @@
+.dots {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: -80px;
+  transform: translateY(-50%);
+  left: 95px;
+  &__item {
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &.active {
+      width: 10px;
+      height: 10px;
+      background-color: $main-light-color;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .dots {
+    display: none;
+  }
+}

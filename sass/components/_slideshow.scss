@@ -1,0 +1,131 @@
+.slideshow {
+  position: relative;
+  top: 80px;
+  width: 100%;
+  min-height: 330px;
+  &__wrapper {
+    position: absolute;
+    width: 645px;
+    min-height: 100%;
+  }
+  &__slides {
+    display: flex;
+    position: absolute;
+    left: 94px;
+    height: 100%;
+    &.shifting {
+      transition: left 0.2s ease-out;
+    }
+  }
+  &__slide {
+    display: flex;
+    width: 645px;
+    height: 100%;
+    padding-top: 60px;
+    padding-left: 70px;
+    background: #ffffff;
+    box-shadow: 0px 10px 0px rgba(156, 105, 226, 0.1);
+    border-radius: 20px;
+    margin-right: 20px;
+    overflow-y: auto;
+  }
+  &__body {
+    width: 385px;
+  }
+  &__control {
+    position: absolute;
+    bottom: -80px;
+    z-index: 5;
+    cursor: pointer;
+    &_prev {
+      background: url("../img/arrow-white.svg") center center/cover no-repeat;
+      width: 20px;
+      height: 14px;
+      right: 110px;
+      transform: rotate(180deg);
+    }
+    &_next {
+      background: url("../img/arrow-white.svg") center center/cover no-repeat;
+      width: 20px;
+      height: 14px;
+      right: 80px;
+    }
+  }
+  &__img {
+    margin-right: 30px;
+    img {
+      border-radius: 50%;
+    }
+  }
+  &__headline {
+    padding-top: 20px;
+    font-weight: 900;
+    font-size: rem(18px);
+  }
+  &__caption {
+    font-weight: 500;
+    font-size: rem(14px);
+    line-height: 160%;
+    color: $main-dark-color;
+    padding-top: 4px;
+    margin-bottom: 20px;
+  }
+  &__descr {
+    color: $text-color;
+    font-size: rem(18px);
+    line-height: 180%;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .slideshow {
+    display: flex;
+    position: static;
+    top: 0;
+    width: 100%;
+    min-height: auto;
+    margin-top: 80px;
+    &__wrapper {
+      width: 100%;
+      min-height: auto;
+      position: static;
+    }
+    &__slide {
+      flex-direction: column;
+      align-items: center;
+      padding: 24px;
+      width: 100%;
+      height: auto;
+      background: #ffffff;
+      box-shadow: 0px 10px 0px rgba(156, 105, 226, 0.1);
+      border-radius: 20px;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+    &__descr {
+      color: $text-color;
+      font-size: rem(16px);
+      line-height: 140%;
+    }
+    &__body {
+      width: 100%;
+    }
+
+    &__control {
+      display: none;
+    }
+    &__slides {
+      flex-direction: column;
+      left: 0;
+      position: static;
+      height: auto;
+    }
+    &__body {
+      width: 100%;
+      text-align: center;
+    }
+    &__img {
+      margin-right: 0;
+    }
+  }
+}

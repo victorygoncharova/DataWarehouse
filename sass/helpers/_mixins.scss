@@ -1,0 +1,7 @@
+@mixin arrow {
+  content: "";
+  background: url("../img/arrow.svg") center center/cover no-repeat;
+  width: 20px;
+  height: 14px;
+  position: absolute;
+}
