@@ -1,5 +1,5 @@
 (() => {
-  window.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("DOMContentLoaded", () => {
     const screenWidth = document.documentElement.clientWidth,
       screenTablet = 767;
 

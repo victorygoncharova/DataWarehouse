@@ -1,5 +1,5 @@
 (() => {
-  window.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("DOMContentLoaded", () => {
     const burgerMenu = (wrapperSelector, menuSelector, activeClass) => {
       const wrapper = document.querySelector(wrapperSelector),
         menu = wrapper.querySelector(menuSelector),
